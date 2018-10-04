@@ -1,0 +1,29 @@
+{
+  "name": "schoolapp",
+  "version": "1.0.0",
+  "description": "A ledger for the sunshines",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbhiPartha/ThisIsImportant.git"
+  },
+  "author": "partha, prithvi, susheela, ganibhai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AbhiPartha/ThisIsImportant/issues"
+  },
+  "homepage": "https://github.com/AbhiPartha/ThisIsImportant#readme",
+  "devDependencies": {
+    "@storybook/react": "^3.4.11",
+    "babel-core": "^6.26.3"
+  },
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "styled-components": "^4.0.0-beta.9"
+  }
+}
