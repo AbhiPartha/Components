@@ -7,7 +7,7 @@ const context = require.context('../stories', true, /Story\.jsx$/);
 addDecorator(centered);
 
 setOptions({
-  name: 'Organism',
+  name: 'Components',
   goFullScreen: false,
   addonPanelInRight: false,
   showSearchBox: false,

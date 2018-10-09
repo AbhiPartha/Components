@@ -16,8 +16,17 @@ const CenteredActivityIndicatorStory = () => (
           render: () => <CenteredActivityIndicator />
         }}
       />
+
+      <DocItem
+        name="not animationg"
+        typeInfo="?boolean = false"
+        description="Whether to show the indicator or hide it."
+        example={{
+          render: () => <CenteredActivityIndicator animating={false}/>
+        }}
+      />
     </Section>
   </DOCCreator>
 );
 
-storiesOf('NativeComponents', module).add('CenteredActivityIndicator', CenteredActivityIndicatorStory);
+storiesOf('Native', module).add('CenteredActivityIndicator', CenteredActivityIndicatorStory);

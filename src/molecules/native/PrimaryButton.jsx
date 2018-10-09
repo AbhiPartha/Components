@@ -7,7 +7,7 @@ const emptyFunction = () => {};
 
 const PrimaryButton = () => (
   <View>
-    <Button color="#17BF63" onPress={emptyFunction} title="Press me" />
+    <Button onPress={emptyFunction} title="Press me" />
     <DividerVertical />
   </View>
 );

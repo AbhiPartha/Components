@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 
 const Button = styled.Button`
     color: white;
-    background-color: red;
+    background-color: transparent;
     border: 1rem solid grey;
 `;
 

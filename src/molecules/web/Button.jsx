@@ -2,10 +2,12 @@ import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import styled from "styled-components";
 
-import Text from "../atoms/web/Text";
+import Text from "../../atoms/web/Text";
 
-const Wrapper = styled.div`
-    border: solid 1px black;
+const Wrapper = styled.button`
+    border: none;
+    background-color: lightblue;
+    color: white
     padding: 8px;
     max-width: 200px;
 `
