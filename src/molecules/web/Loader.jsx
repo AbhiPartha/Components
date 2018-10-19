@@ -22,8 +22,8 @@ const Wrapper = styled.div`
 const GifLoader = styled.div`
     height: 30px;
     width: 30px;
-    border: 5px solid #E0E0E0;
-    border-top: 5px solid #424242;
+    border: 5px solid ${(props) => props.theme.color.secondary};
+    border-top: 5px solid ${(props) => props.theme.color.primary};
     border-radius: 50%;
     animation: ${SpinAnimation} 1s linear infinite;
     margin: 0 auto;

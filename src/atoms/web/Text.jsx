@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import styled from "styled-components";
+import styled, { withTheme } from "styled-components";
 
 const PrimaryText = styled.div`
-    color: black;
+    letter-spacing: ${(props) => props.theme.letterSpacing.button};
+    font-weight: ${(props) => props.theme.fontWeight.button};
     text-align: center;
 `
 
@@ -14,11 +15,7 @@ const Text = (props) => (
 )
 
 Text.propTypes = {
-    name: PropTypes.string
+    theme: PropTypes.object.isRequired
 }
 
-Text.defaultProps = {
-    name: 'stranger'
-}
-
-export default Text
+export default withTheme(Text)

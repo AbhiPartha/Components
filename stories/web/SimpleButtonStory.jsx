@@ -2,9 +2,9 @@ import React from 'react';
 import DOCCreator, { Description, DocItem, Section, storiesOf } from '../../.storybook/doc-creator';
 
 // Actual component
-import PrimaryButton from '../../src/molecules/web/Button'
+import SimpleButton from '../../src/molecules/web/SimpleButton'
 
-const PrimaryButtonStory = () => (
+const SimpleButtonStory = () => (
   <DOCCreator title="Primary Button">
     <Description>Displays a web button</Description>
     <Section title="Props">
@@ -13,11 +13,11 @@ const PrimaryButtonStory = () => (
         typeInfo="?string"
         description="Colored button"
         example={{
-          render: () => <PrimaryButton> Click me! </PrimaryButton>
+          render: () => <SimpleButton text={"sign in"} />
         }}
       />
     </Section>
   </DOCCreator>
 );
 
-storiesOf('Web', module).add('PrimaryButton', PrimaryButtonStory);
+storiesOf('Web', module).add('PrimaryButton', SimpleButtonStory);

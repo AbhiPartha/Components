@@ -1,17 +1,23 @@
 import { setOptions } from '@storybook/addon-options';
-import centered from './decorated-center';
+import themes from './custom-addons/ThemeDecorator';
 import { configure, addDecorator } from '@storybook/react';
+
+import { OrangeStreak } from '../theme/OrangeStreak'
+import { VioletSky } from '../theme/VioletSky';
 
 const context = require.context('../stories', true, /Story\.jsx$/);
 
-addDecorator(centered);
+addDecorator(themes([
+  OrangeStreak,
+  VioletSky
+]));
 
 setOptions({
   name: 'Components',
   goFullScreen: false,
-  addonPanelInRight: false,
+  addonPanelInRight: true,
   showSearchBox: false,
-  showAddonPanel: false,
+  showAddonPanel: true,
   showStoriesPanel: true
 });
 

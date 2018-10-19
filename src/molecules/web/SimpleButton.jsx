@@ -5,30 +5,29 @@ import styled from "styled-components";
 import Text from "../../atoms/web/Text";
 
 const Wrapper = styled.button`
-    border: none;
-    background-color: lightblue;
-    color: white
-    padding: 8px;
+    border: transparent;
+    background-color: ${(props) => props.theme.color.primary};
+    color: ${(props) => props.theme.color.white};
+    border-radius: 50px;
+    padding: 12px;
     max-width: 200px;
 `
 
-class Button extends Component {
+class SimpleButton extends Component {
 
     static propTypes = {
-        name: PropTypes.string,
-        children: PropTypes.array.isRequired
+        text: PropTypes.string.isRequired
     }
 
     static defaultProps = {
-        name: 'stranger', 
+        text: 'Click Me!', 
     }
 
     render () {
-
         return (
             <Wrapper>
                 <Text>
-                    {this.props.children}
+                    {this.props.text.toUpperCase()}
                 </Text>
             </Wrapper>
         )
@@ -36,4 +35,4 @@ class Button extends Component {
 }
 
 
-export default Button
+export default SimpleButton
